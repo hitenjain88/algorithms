@@ -1,10 +1,17 @@
-def insertion_sort(a):
-    l=len(a)
-    for i in range(l-1):
-        m=min(a[i:])
-        s=a.index(m)
-        a[i],a[s]=a[s],a[i]
-    print(a)
+def insertion_sort(array):
+    """Implementation of Insertion Sort in Python.
 
-a=list(map(int,input().split()))
-insertion_sort(a)
+    :param array: A array or a list which is supposed to be sorted.
+    :return: The same array or list sorted in Ascending order.
+    """
+    length = len(array)
+    for index in range(1, length):
+        key = array[index]
+        for sub_index in range(index - 1, -1, -1):
+            if key < array[sub_index]:
+                array[sub_index + 1] = array[sub_index]
+            else:
+                array[sub_index + 1] = key
+                break
+    return array
+
