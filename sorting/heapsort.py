@@ -1,4 +1,10 @@
 def heap_sort(array):
+    '''
+    Implementation of Heap Sort in Python.
+
+    :param array: A array or a list which is supposed to be sorted.
+    :return: The same array or list sorted in Ascending order.e
+    '''
     length = len(array)
 
     for item in range(length, -1, -1):
