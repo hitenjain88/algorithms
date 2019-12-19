@@ -1,4 +1,10 @@
 def counting_sort(array):
+    """
+    Implementation of Counting Sort Sort in Python.
+
+    :param array: A array or a list which is supposed to be sorted.
+    :return: The same array or list sorted in Ascending order.
+    """
     low = min(array)
     length = len(array)
     if low < 0:
