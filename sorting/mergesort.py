@@ -1,4 +1,10 @@
 def merge_sort(array):
+    """Implementation of Merge Sort in Python.
+    
+    :param array: A array or a list which is supposed to be sorted.
+    :return: The same array or list sorted in Ascending order.
+    """
+    
     length = len(array)
     if length == 1:
         return array
