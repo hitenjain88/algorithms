@@ -1,4 +1,10 @@
 def quick_sort(array):
+    """
+    Implementation of Quick Sort in Python.
+    
+    :param array: A array or a list which is supposed to be sorted.
+    :return: The same array or list sorted in Ascending order.
+    """
     low = 0
     length = len(array)
     high = length - 1
