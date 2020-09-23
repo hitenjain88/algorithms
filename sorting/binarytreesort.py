@@ -10,15 +10,14 @@ class BinaryTree (object):
 
 		# Go to the left
 		elif childNode < self.node:
-			if (!self.left):
-				self.left = BinaryTree (childNode)
-			else:
+			if self.left:
 				self.left.addChild (childNode)			
+			else:
+				self.left = BinaryTree (childNode)
 
 		# Go to the right
 		else:
-			if (!self.right):
-				self.right = BinaryTree (childNode)
-
-			else:
+			if self.right:
 				self.right.addChild (childNode)
+			else:
+				self.right = BinaryTree (childNode)
