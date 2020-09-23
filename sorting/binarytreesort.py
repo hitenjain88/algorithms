@@ -42,15 +42,3 @@ def buildTree (array):
 		root.addChild(array[idx])
 
 	return root
-
-def main ():
-	array = [5,4,7,2,11,14,6]
-
-	tree = buildTree (array)
-
-	sortedArray = tree.sortTree()
-	
-	print (array)
-	print (sortedArray)
-
-main()
